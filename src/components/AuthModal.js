@@ -1,9 +1,13 @@
 import React from "react";
 
-const AuthModal = () => {
+const AuthModal = ({ setShowModal }) => {
+  const handleClick = () => {
+    setShowModal(false);
+  };
+
   return (
-    <div>
-      <h1>AuthModal</h1>
+    <div className="auth-modal">
+      <div onClick={handleClick}>Elo</div>
     </div>
   );
 };
